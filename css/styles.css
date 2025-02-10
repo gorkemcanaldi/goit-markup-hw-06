@@ -4,6 +4,7 @@
   --slate: #434455;
   --iris: #4d5ae5;
   --cloud: #f4f4fd;
+  --font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -805,10 +806,6 @@ header {
 /* tablet kısmı */
 
 @media (min-width: 768px) and (max-width: 1157px) {
-  header {
-    justify-content: space-between;
-  }
-
   .logo-div {
     margin-left: 16px;
   }
@@ -877,6 +874,8 @@ header {
   .features-list {
     flex-wrap: wrap;
     gap: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
     justify-content: space-between;
   }
 
@@ -934,4 +933,7 @@ header {
     margin-top: 72px;
     margin-left: 108px;
   }
+}
+
+@media (min-width: 320px) {
 }
