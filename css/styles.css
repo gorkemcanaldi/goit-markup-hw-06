@@ -805,45 +805,35 @@ header {
 /* tablet kısmı */
 
 @media (min-width: 768px) and (max-width: 1157px) {
-  body {
-    margin: 0 auto;
-    width: 100%;
-  }
-
   header {
     justify-content: space-between;
   }
 
   .logo-div {
-    margin-left: 10px;
+    margin-left: 16px;
   }
 
   .navigation-menu {
     max-width: 261px;
-    margin-left: 60px;
+    margin-left: 120px;
     position: relative;
-  }
-
-  .com-menu {
-    width: 0%;
   }
 
   .com-list {
     flex-direction: column;
     gap: 12px;
     position: relative;
-    right: 200px;
+    right: 250px;
   }
 
   .hero-container {
-    position: relative;
     width: 100%;
   }
 
   .hero-heading {
     position: relative;
     width: 496px;
-    bottom: 20px;
+    bottom: 50px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -853,7 +843,7 @@ header {
 
   .hero-btn {
     position: relative;
-    bottom: 30px;
+    bottom: 60px;
   }
 
   .contain-icon {
@@ -862,8 +852,6 @@ header {
 
   .container- {
     margin-top: 96px;
-    margin-left: 16px;
-    margin-right: 16px;
   }
 
   .feature-title {
@@ -911,11 +899,10 @@ header {
   .team-list {
     margin-top: 8px;
     flex-wrap: wrap;
-    margin-left: 64px;
-    margin-right: 64px;
+    margin-left: 108px;
+    margin-right: 108px;
     gap: 24px;
   }
-
   .team-item {
     margin-top: 64px;
     flex-basis: calc(50% - 12px);
