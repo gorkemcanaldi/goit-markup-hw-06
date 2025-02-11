@@ -5,6 +5,7 @@
   --iris: #4d5ae5;
   --cloud: #f4f4fd;
   --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
 }
 
 * {
@@ -49,6 +50,10 @@ img {
   margin-left: 156px;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.burger-menu {
+  display: none;
 }
 
 .logo {
@@ -614,7 +619,6 @@ header {
 }
 /* form */
 .modal-window {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -802,6 +806,7 @@ header {
   cursor: pointer;
   background-color: #4d5ae5;
   border: none;
+  margin-left: 100px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -946,5 +951,222 @@ header {
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    margin: 0 auto;
+  }
+
+  .navigation-menu {
+    display: none;
+  }
+
+  .com-menu {
+    display: none;
+  }
+
+  .logo {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--navy-blue);
+  }
+
+  .logo-div {
+    position: relative;
+    margin-left: 16px;
+  }
+
+  .burger-menu {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    position: relative;
+    left: 150px;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .hero-image {
+    background-size: cover;
+    height: 432px;
+  }
+
+  .hero-heading {
+    position: relative;
+    bottom: 160px;
+    width: 216px;
+    height: 160px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  .hero-btn {
+    position: relative;
+    bottom: 140px;
+  }
+
+  .features-list {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 16px;
+    gap: 72px;
+    width: 288px;
+  }
+
+  .features-li {
+    width: 288px;
+    position: relative;
+  }
+
+  .contain-icon {
+    display: none;
+  }
+
+  .feature-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  .feature-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+  }
+
+  .team-container {
+    margin: 0 auto;
+  }
+
+  .team-heading {
+    margin: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navy-blue);
+  }
+
+  .team-list {
+    display: block;
+  }
+
+  .team-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navy-blue);
+  }
+
+  .team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    position: relative;
+    left: 15px;
+    color: var(--slate);
+  }
+
+  .social-li {
+    position: relative;
+    left: 15px;
+  }
+
+  .team-item {
+    width: 264px;
+    margin-top: 72px;
+  }
+
+  .team-info {
+    width: 232px;
+    height: auto;
+  }
+
+  .portfolio-list {
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    width: 288px;
+  }
+
+  .container-foot {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .footer-info {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .footer-box {
+    margin-top: 72px;
+    align-items: center;
+  }
+
+  .footer-logo,
+  .logo-span-second,
+  .footer-text,
+  .social-foot-title {
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .footer-list {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .div-form {
+    margin-top: 72px;
+    margin-bottom: 96px;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-foot {
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 16px;
+  }
+
+  .but-foot {
+    margin-left: 0;
+  }
+
+  .modal-container {
+    width: 288px;
+    height: 623px;
+  }
+
+  .button-last {
+    position: relative;
+    right: 60px;
+  }
 }
